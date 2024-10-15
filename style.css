@@ -1,0 +1,175 @@
+    
+
+    .home-content{
+        max-width: 500px;
+        padding-left: 30px;
+        padding-top: 50px;
+        
+    }
+    
+    .home-content h3{
+        font-size: 38px;
+        padding-top: 40px;
+        padding-left: 90px;
+    }
+    .home-content h1{
+        font-size: 55px;
+        padding-left: 20px;
+       
+
+    }
+    .home-content p{
+       
+        margin: 29px 0 25px;
+    }
+    .btn-box{
+        width: 245px;
+        display: flex;
+        gap: 2em;
+    }
+    .btn-1{
+        padding: 28px, 28px 28px 28px;
+        background-color: cyan;
+        color: blue;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        font-size: 18px;
+        letter-spacing:1px;
+        font-weight: 800;
+        transition: 0.3s ease;
+        cursor: pointer;
+
+
+    }
+    .btn-1:hover{
+        background-color: rgb(52, 0, 241);
+        color: rgb(226, 220, 43);
+        border: 2px solid black;
+
+    }
+    .btn-2{
+        padding: 28px, 28px;
+        background-color: orangered;
+        color: white;
+        border: 2px solid black;
+        border-radius: 8px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        transition: 0.3s ease;
+        cursor: pointer;
+
+
+    }
+    .btn-2:hover{
+        background-color: white;
+        color: orange;
+
+    }
+    .img-box img{
+        padding-left:200px;
+        width: 450px; 
+        padding-top: 15px; 
+        background-color: blanchedalmond;
+        height:500px;
+    
+        
+    }
+
+
+    
+*{
+    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    nav{
+        height: 70px;
+        background: green;
+    
+    }
+    nav img{
+        width: 60px;
+        height: 60px;
+        position: left;
+        top: 5px;
+        left:4%;
+        padding-left: 30px; 
+        padding-top: 5px;
+    
+    }
+    nav ul{
+        float: right;
+        margin: right 25px;
+    
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 15px;
+    
+    
+    }
+    nav ul li a{
+        position: relative;
+        color: aqua;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 5px, 0;
+        
+    }
+    nav ul li a::before{
+        position: absolute;
+        content:"" ;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background-color: rgb(249, 249, 249);
+        transform: scaleX(0);
+        transform-origin: right; 
+        transition: transform .4s linear;
+    
+    }
+    nav ul li a:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+    
+    }
+    .nav ul li a.active{
+        color: cyan;
+        border-bottom: 3px solid orangered;
+    }
+    @media (max-width: 1118px){
+        nav img{
+            left: 9%;
+        }
+    }
+    @media (max-width: 944px){
+        nav img{
+            left: 6%;
+            top: 15px;
+            width: 70px;
+    
+        }
+        nav ul li a{
+            font-size: 12px;
+    
+        }
+    }
+    @media (max-width: 860px){
+        nav img{
+            left: 6%;
+            top: 12px;
+            width: 70px;
+    
+        }
+        nav ul li a{
+            font-size: 12px;
+            
+        }
+   
+    
+}
+}
